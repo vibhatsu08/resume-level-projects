@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.navbar{
+    padding: 10px;
+}
+.navbar-list{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: white;
+}
+.navbar-list li{
+    list-style-type: none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.navbar-list li a{
+    list-style-type: none;
+    display: inline-block;
+    border: 2px solid #191923;
+    padding: 5px 20px;
+    border-radius: 100px;
+    font-size: 1.5rem;
+    transition: 0.2s ease;
+}
+.navbar-list a{
+    text-decoration: none;
+    color: #191923;
+}
+.home:hover{
+    background-color: #FF8427;
+    transition: 0.2s ease;
+    color: white;
+}
+.work:hover{
+    background-color: #6320EE;
+    transition: 0.2s ease;
+    color: white;
+}
+.about:hover{
+    background-color: #E84855;
+    transition: 0.2s ease;
+    color: white;
+}
+.github:hover{
+    background-color: #0353A4;
+    transition: 0.2s ease;
+    color: white;
+}
+.connect:hover{
+    background-color: #DD1C1A;
+    transition: 0.2s ease;
+    color: white;
+}
+
+#welcome-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+#welcome-section h1{
+    font-size: 6rem;
+    border-radius: 10px;
+}
+#welcome-section p{
+    background-color: #191923;
+    color: white;
+    border: 10px solid #FF8427;
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 100px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0;
+}
+#welcome-section a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+#welcome-section button{
+    border: none;
+    background-color: #191923;
+    font-size: 2rem;
+    padding: 10px 20px;
+    border-radius: 100px;
+    margin-top: 20px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+#welcome-section button:hover{
+    box-shadow: 0px 10px #3772FF;
+    transition: 0.2s ease;
+}
+
+#work-section{
+    margin: 2rem auto;
+}
+#work-section-header{
+    background-color: #191923;
+    width: fit-content;
+    color: white;
+    border: 10px solid #6320EE;
+    font-size: 3rem;
+    padding: 10px 20px;
+    border-radius: 100px;
+    margin: 0 auto 1rem auto;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    max-width: 1000px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+::-webkit-scrollbar{
+    width: 0px;
+}
+.card{
+    margin: 1rem auto;
+    width: 400px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.card img{
+    border-radius: 20px;
+}
+.horizontal-scroll{
+    margin: 10px 5px;
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    align-content: flex-end;
+}
+.horizontal-scroll a{
+    display: inline-block;
+    font-size: 1.3rem;
+    padding: 5px 15px;
+    text-decoration: none; 
+    margin: 5px;
+    border-radius: 100px;
+    transition: 0.2s ease;
+}
+.horizontal-scroll a:hover{
+    background-color: rgb(33, 33, 33);
+    color: white;
+    transition: 0.2s ease;
+}
+header{
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    background-color: #FFE347;
+    color: #191923;
+    width: fit-content;
+    padding: 20px 25px;
+    border-radius: 100px;
+}
+@media screen and (max-width:600px) {
+    header{
+        font-size: 1.3rem;
+        margin: 1rem auto;
+    }
+}
+.card.card1{
+    border: 2px solid rgb(33, 33, 33);
+    transition: 0.2s ease;
+}
+.card.card1:hover{
+    box-shadow: 10px 10px #191923;
+    transition: 0.2s ease;
+}
+.card.card1 h2{
+    border-left: 5px solid rgb(33, 33, 33);
+    padding-left: 10px;
+    font-size: 2rem;
+    color: rgb(33, 33, 33);
+}
+.card.card1 p{
+    color: rgb(83, 83, 83);
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 10px;
+}
+.horizontal-scroll1 a{
+    border: 1px solid rgb(33, 33, 33);
+    color: rgb(33, 33, 33);
+    transition: 0.2s ease;
+}
+.horizontal-scroll1 a:hover{
+    color: white;
+    background-color: rgb(33, 33, 33);
+    transition: 0.2s ease;
+}
+.card.card2{
+    border: 2px solid #E54B4B;
+    transition: 0.2s ease;
+}
+.card.card2:hover{
+    box-shadow: -10px 10px #E54B4B;
+    transition: 0.2s ease;
+}
+.card.card2 h2{
+    border-left: 5px solid #e43a3a;
+    padding-left: 10px;
+    font-size: 2rem;
+    color: #E54B4B;
+}
+.card.card2 p{
+    color: #df7676;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 10px;
+}
+.horizontal-scroll2 a{
+    border: 1px solid #E54B4B;
+    color: #E54B4B;
+    transition: 0.2s ease;
+}
+.horizontal-scroll2 a:hover{
+    color: white;
+    background-color: #E54B4B;
+    transition: 0.2s ease;
+}
+.card.card3{
+    border: 2px solid #3F84E5;
+    transition: 0.2s ease;
+}
+.card.card3:hover{
+    box-shadow: 10px 10px #3F84E5;
+    transition: 0.2s ease;
+}
+.card.card3 h2{
+    border-left: 5px solid #3F84E5;
+    padding-left: 10px;
+    font-size: 2rem;
+    color: #3F84E5;
+}
+.card.card3 p{
+    color: #5992e1;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 10px;
+}
+.horizontal-scroll3 a{
+    border: 1px solid #3F84E5;
+    color: #3F84E5;
+    transition: 0.2s ease;
+}
+.horizontal-scroll3 a:hover{
+    color: white;
+    background-color: #3F84E5;
+    transition: 0.2s ease;
+}
+.card.card4{
+    border: 2px solid #735CDD;
+    transition: 0.2s ease;
+}
+.card.card4:hover{
+    box-shadow: -10px 10px #735CDD;
+    transition: 0.2s ease;
+}
+.card.card4 h2{
+    border-left: 5px solid #735CDD;
+    padding-left: 10px;
+    font-size: 2rem;
+    color: #735CDD;
+}
+.card.card4 p{
+    color: #8e7cdf;
+    font-size: 1.2rem;
+    text-align: justify;
+    margin: 10px;
+}
+.horizontal-scroll4 a{
+    border: 1px solid #735CDD;
+    color: #735CDD;
+    transition: 0.2s ease;
+}
+.horizontal-scroll4 a:hover{
+    color: white;
+    background-color: #735CDD;
+    transition: 0.2s ease;
+}
+
+
+#about-section-header{
+    background-color: #191923;
+    width: fit-content;
+    color: white;
+    border: 10px solid #E84855;
+    font-size: 3rem;
+    padding: 10px 20px;
+    border-radius: 100px;
+    margin: 2rem auto 1rem auto;
+}
+#about-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#about-section-content{
+    text-align: center;
+}
+#about-section-image{
+    border-radius: 50%;
+    margin: 2rem auto;
+    width: 30%;
+    transition: 0.2s ease;
+    box-shadow: -15px 15px #E54B4B, 15px -15px #3F84E5, 15px 15px #735CDD, -15px -15px rgb(255, 196, 0);
+    cursor: pointer;
+}
+
+#about-section-content-header{
+    background-color: #191923;
+    width: fit-content;
+    color: white;
+    font-size: 3rem;
+    padding: 10px 20px;
+    border-radius: 100px;
+    margin: 2rem auto 1rem auto;
+}
+#about-section-content-para{
+    font-size: 2rem;
+    width: 100%;
+    max-width: 1000px;
+}
+
+#github-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+#github-section-header{
+    background-color: #191923;
+    width: fit-content;
+    color: white;
+    border: 10px solid #0353A4;
+    font-size: 3rem;
+    padding: 10px 20px;
+    border-radius: 100px;
+    margin: 2rem auto 1rem auto;
+}
+#github-section-content{
+    text-align: center;
+}
+#github-section-content-para{
+    font-size: 2rem;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+#github-section-image{
+    border-radius: 50%;
+    margin: 2rem auto;
+    width: 30%;
+    transition: 0.2s ease;
+    box-shadow: -15px 15px #E54B4B, 15px -15px #3F84E5, 15px 15px #735CDD, -15px -15px rgb(255, 196, 0);
+    cursor: pointer;
+}
+#github-about-button a{
+    text-decoration: none;
+    color: #191923;
+    border-radius: 100px;
+    padding: 10px 30px;
+    font-family: 'Oswald', sans-serif;
+    transition: 0.2s ease;
+}
+#github-about-button{
+    border: none;
+    background-color: white;
+    border: 2px solid #191923;
+    border-radius: 100px;
+    margin-top: 20px;
+    padding: 10px 0px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+}
+#github-about-button a:hover{
+    background-color: #191923;
+    color: white;
+    transition: 0.2s ease;
+}
+
+#connect-section-header{
+    background-color: #191923;
+    width: fit-content;
+    color: white;
+    border: 10px solid #DD1C1A;
+    font-size: 3rem;
+    padding: 10px 20px;
+    border-radius: 100px;
+    margin: 2rem auto 1rem auto;
+}
+#connect-section-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+#connect-section-icons a{
+    text-decoration: none;
+    margin: 2rem 1rem;
+}
+.twitter{
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: #009DDC;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 100px;
+    transition: 0.2s ease;
+}
+.twitter:hover{
+    box-shadow: 5px 5px #191923;
+    transition: 0.2s ease;
+}
+.instagram{
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: #724CF9;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 100px;
+    transition: 0.2s ease;
+}
+.instagram:hover{
+    box-shadow: 0px 5px #191923;
+    transition: 0.2s ease;
+}
+.youtube{
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: #F8333C;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 100px;
+    transition: 0.2s ease;
+}
+.youtube:hover{
+    box-shadow: -5px 5px #191923;
+    transition: 0.2s ease;
+}
