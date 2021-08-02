@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Bebas Neue', cursive;
+}
+
+.text{
+    font-size: 3rem;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background:url('images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg');
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.container::before{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.481);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.container-content{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+}
+.text{
+    color: white;
+}
+.login-form{
+    width: 40%;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+@supports (-webkit-backdrop-filter: none){
+    .login-form{
+        -webkit-backdrop-filter: blur(0.5vh);
+        backdrop-filter: blur(0.5vh);
+        background-color: rgba(0, 0, 0, 0.635);
+    }
+}
+.login-form-header{
+    font-size: 2rem;
+    color: white;
+    background-color: #724CF9;
+    margin-bottom: 2rem;
+    padding: 30px;
+    border-radius: 20px 20px 0px 0px;
+}
+.login-form-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+#firstname-label, #lastname-label, #email-label, #age-label, #password-label{
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: #4361EE;
+    color: white;
+    width: fit-content;
+    padding: 8px 12px;
+    border-radius: 100px;
+    margin-bottom: 0.5rem;
+}
+#firstname-box, #lastname-box, #email-box, #age-box, #password-box{
+    font-size: 1.1rem;
+    background-color: inherit;
+    border: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin-bottom: 0.8rem;
+    color: white;
+}
+#firstname-box, #lastname-box, #email-box, #age-box, #password-box:focus{
+    outline: none;
+}
+#submit-button{
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    width: 100%;
+    background-color: #5863F8;
+    font-size: 2rem;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+#submit-button:hover{
+    box-shadow: 5px 5px white;
+    transition: 0.2s ease;
+}
