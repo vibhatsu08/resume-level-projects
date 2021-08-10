@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: url('images/download-Windows-11-wallpaper-scaled.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: rgb(6, 13, 26);
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0), -5px -5px 20px rgba(0, 0, 0);
+}
+.form-content{
+    width: 30%;
+    border-radius: 10px;
+}
+@media (max-width:650px){
+    .form-content{
+        width: 90%;
+    }
+}
+@media (max-width:750px){
+    .form-content{
+        width: 80%;
+    }
+}
+@media (min-width:750px){
+    .form-content{
+        width: 80%;
+    }
+}
+@media (min-width:900px){
+    .form-content{
+        width: 50%;
+    }
+}
+@supports (-webkit-backdrop-filter: none){
+    .form-content-header{
+        -webkit-backdrop-filter: blur(1.5vh);
+        backdrop-filter: blur(1.5vh);
+        background-color: rgba(255, 255, 255, 0.357);
+    }
+}
+.form-content-header{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.405);
+    margin-bottom: 40px;
+}
+@supports (-webkit-backdrop-filter: none){
+    .form-content{
+        -webkit-backdrop-filter: blur(0.5vh);
+        backdrop-filter: blur(0.5vh);
+        background-color: rgba(255, 255, 255, 0.097);
+    }
+}
+input[type="text"], input[type="password"]{
+    display: block;
+    width: 80%;
+    background-color: inherit;
+    font-size: 1.5rem;
+    border-radius: 1000px;
+    border: none;
+    padding: 10px;
+    margin: 20px auto;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+}
+input[type="text"]:focus, input[type="password"]:focus{
+    outline: none;
+}
+input[type="text"]::placeholder, input[type="password"]::placeholder{
+    color: rgb(232, 232, 232);
+}
+@supports (-webkit-backdrop-filter: none){
+    input[type="text"], input[type="password"]{
+        -webkit-backdrop-filter: blur(0.5vh);
+        backdrop-filter: blur(0.5vh);
+        background-color: rgba(255, 255, 255, 0.357);
+    }
+}
+input[type="submit"]{
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    padding: 10px;
+    margin-top: 40px;
+    cursor: pointer;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.405);
+}
+@supports (-webkit-backdrop-filter: none){
+    input[type="submit"]{
+        -webkit-backdrop-filter: blur(1.5vh);
+        backdrop-filter: blur(1.5vh);
+        background-color: rgba(255, 255, 255, 0.357);
+        transition: 0.2s ease;
+    }
+    input[type="submit"]:hover{
+        background-color: rgba(255, 255, 255, 0.433);
+        text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.501);
+        transition: 0.2s ease;
+    }
+}
