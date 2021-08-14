@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.548);
+    padding: 40px 60px;
+    z-index: 2;
+}
+
+@supports (-webkit-backdrop-filter: none){
+    .navbar{
+        -webkit-backdrop-filter: blur(1vh);
+        backdrop-filter: blur(1vh);
+        background-color: rgba(0, 0, 0, 0.446);
+    }
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+.navbar-logo{
+    font-size: 2.2rem;
+    font-weight: 300;
+}
+.bold-logo-text{
+    font-weight: 600;
+    color: white;
+    background-color: #ed1952;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.navbar-links{
+    font-size: 1.4rem;
+}
+.navbar-links a{
+    padding: 10px 15px;
+    border-radius: 1000px;
+    text-transform: capitalize;
+    transition: 0.2s ease;
+}
+.navbar-links a:hover{
+    background-color: #ed1952;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.page-header{
+    background:  linear-gradient(rgba(175, 0, 111, 0.535), rgba(0, 0, 0, 0.816)), url('images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg');
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.page-header-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+.page-header-first-box{
+    color: white;
+    font-size: 4rem;
+    width: 35%;
+    text-transform: uppercase;
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 20px 20px white;
+    z-index: 1;
+}
+@supports (-webkit-backdrop-filter: none){
+    .page-header-first-box{
+        -webkit-backdrop-filter: blur(0.5vh);
+        backdrop-filter: blur(0.5vh);
+        background-color: rgba(0, 0, 0, 0.446);
+    }
+}
+
+.main-content-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    margin-top: 150px;
+}
+.main-content-image{
+    background: url('images/minh-pham-HI6gy-p-WBI-unsplash.jpg');
+    width: 40%;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    box-shadow: 20px 20px #ed1952;
+}
+.main-content-text{
+    width: 50%;
+}
+.main-content-text h2{
+    background-color: #ed1952;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+.main-content-text p{
+    color: #40434E;
+    font-size: 1.3rem;
+    padding: 20px;
+}
+
+.page-creations-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 150px;
+}
+.page-creations-text{
+    background-image: linear-gradient(to bottom right, #ff0044, #0084ff);
+    background-clip: text;
+    color: transparent;
+    font-size: 4rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.page-creations-box-text a{
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #ed1952;
+    padding: 20px;
+    background-color: white;
+    border: 4px solid #ed1952;
+    border-radius: 20px;
+    transition: 0.2s ease;
+}
+.page-creations-box-text a:hover{
+    color: white;
+    background-color: #ed1952;
+    transition: 0.2s ease;
+    box-shadow: -10px 10px black;
+}
+
+.page-projects-box{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.page-projects-cards{
+    position: relative;
+    margin: 0 auto;
+    width: 350px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.254), 
+              0 2px 2px rgba(0,0,0,0.254), 
+              0 4px 4px rgba(0,0,0,0.254), 
+              0 8px 8px rgba(0,0,0,0.254),
+              0 16px 16px rgba(0,0,0,0.254);
+    z-index: 1;
+}
+.page-projects-cards:hover{
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.254), 
+              0 2px 4px rgba(0,0,0,0.254), 
+              0 4px 8px rgba(0,0,0,0.254), 
+              0 8px 16px rgba(0,0,0,0.254),
+              0 16px 32px rgba(0,0,0,0.254);
+    transition: 0.2s ease;
+    transform: scale(1.1);
+    z-index: 2;
+}
+.page-projects-cards img{
+    display: block;
+    height: 450px;
+}
+.projects-overlay-text{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.2s ease;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.179), rgba(0, 0, 0, 0.604), rgba(0, 0, 0, 0.748), rgba(0, 0, 0, 0.864));
+}
+  
+.page-projects-cards:hover .projects-overlay-text{
+    opacity: 1;
+}
+  
+.text{
+    width: 100%;
+    font-weight: 600;
+    font-size: 2rem;
+    bottom:0;
+    position: absolute;
+    padding: 20px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom right, #EC5766, #D91E36);
+    background-clip: text;
+    color: transparent;
+}
+
+.footer{
+    background-color: black;
+    padding: 40px;
+    color: white;
+    bottom: 0;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.page-footer1-logo{
+    font-size: 2.2rem;
+    font-weight: 300;
+    color: white;
+}
+.footer1-bold-logo-text{
+    font-weight: 600;
+    color: white;
+    background-color: #ed1952;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.page-footer1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.page-footer1-links a{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-transform: capitalize;
+    transition: 0.2 ease;
+}
+.page-footer1-links a:hover{
+    border-bottom: 2px solid #ed1952;
+    transition: 0.2 ease;
+}
+.page-footer2{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.page-footer2-links a{
+    font-size: 1.5rem;
+    padding: 10px;
+    text-transform: capitalize;
+    transition: 0.2 ease;
+}
+.page-footer2-links a:hover{
+    border-bottom: 2px solid #ed1952;
+    transition: 0.2 ease;
+}
+.page-footer2-copyright{
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 900px){
+    .page-header{
+        height: 100vh;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar-links{
+        margin-top: 40px;
+    }
+    .navbar-links a{
+        display: block;
+        background-color: inherit;
+        color: white;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    .navbar-links a:hover{
+        background-color: inherit;
+        color: white;
+        text-decoration: underline;
+    }
+    .page-header-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-header-first-box{
+        box-shadow: 10px 10px white;
+        width: fit-content;
+        font-size: 2.5rem;
+    }
+    .main-content-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 40px;
+        padding: 30px;
+    }
+    .main-content-image{
+        width: 100%;
+        box-shadow: 10px 10px #ed1952;
+    }
+    .main-content-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 40px;
+        width: 90%;
+    }
+    .main-content-text h2{
+        width: 100%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .main-content-text p{
+        text-align: justify;
+        font-size: 1.5rem;
+    }
+    .page-creations-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .page-creations-text{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 40px;
+    }
+    .page-creations-box-text a{
+        background-color: #ed1952;
+        color: white;
+        border: none;
+    }
+    .page-creations-box-text a:hover{
+        box-shadow: none;
+    }
+    .page-footer1-logo{
+        font-size: 1.3rem;
+    }
+    .page-footer1-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.3rem;
+    }
+    .page-footer2-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.3rem;
+    }
+    .page-footer2-copyright{
+        font-size: 1.3rem;
+        width: 30%;
+    }
+}
+@media screen and (width:1000px) {
+    .page-header{
+        height: 100vh;
+    }   
+    .page-header-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-header-first-box{
+        box-shadow: 10px 10px white;
+        width: fit-content;
+        font-size: 2.5rem;
+    }
+}
+@media screen and (width: 1100px) {
+    .page-header{
+        height: 100vh;
+    }   
+    .page-header-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-header-first-box{
+        box-shadow: 10px 10px white;
+        width: fit-content;
+        font-size: 2.5rem;
+    }
+}
+@media screen and (width:1200px) {
+    .page-header{
+        height: 100vh;
+    }   
+    .page-header-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-header-first-box{
+        box-shadow: 10px 10px white;
+        width: fit-content;
+        font-size: 2.5rem;
+    }
+}
+@media screen and (width:1300px) {
+    .page-header{
+        height: 100vh;
+    }   
+    .page-header-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-header-first-box{
+        box-shadow: 10px 10px white;
+        width: fit-content;
+        font-size: 2.5rem;
+    }
+}
+@media screen and (width:1400px) {
+    .page-header{
+        height: 100vh;
+    }   
+    .page-header-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page-header-first-box{
+        box-shadow: 10px 10px white;
+        width: fit-content;
+        font-size: 2.5rem;
+    }
+}
